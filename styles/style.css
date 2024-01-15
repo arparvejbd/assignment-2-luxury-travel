@@ -73,7 +73,7 @@ nav {
 
 .company-name {
     color: var(--theme-black);
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 800;
 }
 
@@ -205,6 +205,7 @@ nav {
 .why-choose-us {
     padding-bottom: 80px;
 }
+
 .why-choose-us .choose-us-des {
     margin: 20px 20%;
 }
@@ -248,6 +249,37 @@ nav {
 
 
 
+/* footer-section style */
+footer {
+    background: rgba(19, 19, 24, 0.05);
+}
+
+.footer-section {
+    padding: 100px 0;
+}
+
+.footer-section .company-name {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    margin: 30px 20%;
+}
+
+.social-link ul {
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-section hr {
+    width: 70%;
+    margin: 30px auto;
+    background: rgba(19, 19, 24, 0.10);}
 
 .copy-right {
     font-family: 'Inter';
