@@ -38,13 +38,12 @@ p {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    border: 2px solid red;
 }
 
 button {
     background-color: var(--primary-color);
     color: #FFF;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 700;
     border-radius: 8px;
     width: 174px;
@@ -83,6 +82,10 @@ nav {
 
 .company-name h1 span {
     color: var(--primary-color);
+}
+
+.menu-bar img {
+    display: none;
 }
 
 .menu-bar ul {
@@ -155,6 +158,7 @@ nav {
     justify-content: center;
     gap: 8px;
     align-items: center;
+    font-size: 16px;
 }
 
 /* our-popular-tours style */
@@ -218,10 +222,11 @@ nav {
     display: flex;
     justify-content: space-between;
     text-align: left;
+    gap: 24px;
 }
 
 .choose-card {
-    width: 510px;
+    width: calc(100% - 24px);
     height: 220px;
     border-radius: 16px;
     border: 1px solid rgba(251, 181, 99, 0.20);
@@ -233,6 +238,9 @@ nav {
 .card-2 {
     border: 1px solid rgba(41, 206, 246, 0.20);
     background: rgba(41, 206, 246, 0.05);
+}
+.card-3 {
+    width: calc(50% - 12px);
 }
 
 .choose-card h3 {
@@ -246,8 +254,92 @@ nav {
     justify-content: center;
 }
 
+/* newsletter style */
+.newsletter {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 100px;
+}
 
+.newsletter-form h2 {
+    color: var(--theme-black);
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
 
+.newsletter-form hr {
+    background: rgba(19, 19, 24, 0.05);
+    margin: 24px auto;
+}
+
+.newsletter-form {
+    width: 394px;
+    height: 342px;
+    border-radius: 16px;
+    border: 1px solid var(--primary-color);
+    padding: 40px;
+    text-align: left;
+}
+
+.newsletter-form form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.newsletter-form form input {
+    width: 393px;
+    height: 52px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    margin-bottom: 16px;
+    border: none;
+}
+
+.newsletter-form form input::placeholder {
+    color: rgba(19, 19, 24, 0.30);
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 20px;
+}
+
+.newsletter-form form button {
+    width: 100%;
+}
+
+.newsletter-column-2 {
+    width: 672px;
+    height: 422px;
+    border-radius: 16px;
+    background-image: url('/images/mountain-water.png');
+    position: relative;
+}
+
+.save-up-discount {
+    background-color: var(--primary-color);
+    width: 324px;
+    height: 120px;
+    position: absolute;
+    bottom: 50px;
+    right: 10px;
+    transform: rotate(-19.628deg);
+    border-radius: 16px;
+}
+
+.save-up-discount p {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+.save-up-discount h3 {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 800;
+}
 
 /* footer-section style */
 footer {
@@ -279,8 +371,172 @@ footer {
 .footer-section hr {
     width: 70%;
     margin: 30px auto;
-    background: rgba(19, 19, 24, 0.10);}
+    background: rgba(19, 19, 24, 0.10);
+}
 
 .copy-right {
     font-family: 'Inter';
+}
+
+
+/* responsive mobile device style */
+@media only screen and (max-width: 600px) {
+
+    .primary-title {
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .max-page-width {
+        margin: 0 20px;
+    }
+
+    /* nav section */
+    .company-name {
+        font-size: 21.543px;
+    }
+
+    .menu-bar ul {
+        display: none;
+    }
+
+    .menu-bar img {
+        display: block;
+    }
+
+    .header-section {
+        padding: 30px;
+        background-position-x: center;
+        gap: 24px;
+    }
+
+    .header-section h1 {
+        font-size: 22px;
+    }
+
+    .header-section p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .address-search-form form {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .address-search-form form input,
+    .address-search-form form select,
+    .address-search-form button {
+        width: 100%;
+    }
+
+    /* our-popular-tours style */
+    .our-popular-tours {
+        flex-direction: column;
+        gap: 50px;
+        line-height: 24px;
+        padding-bottom: 40px;
+    }
+
+    .popular-tours-column-1 p {
+        font-size: 14px;
+    }
+
+    .popular-tours-column-1 #ul11 {
+        padding-left: 25px;
+    }
+
+    .popular-tours-column-2 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* choose-your-destination style */
+    .choose-your-destination {
+        margin-bottom: 20px;
+    }
+
+    .choose-your-destination p {
+        margin: 20px;
+    }
+
+    .img-row {
+        flex-direction: column;
+    }
+
+    .img-row img {
+        height: 200px;
+    }
+
+    /* why-choose-us style */
+    .why-choose-us {
+        padding-bottom: 30px;
+    }
+
+    .why-choose-us .choose-us-des {
+        margin: 20px;
+    }
+
+    .choose-row-1 {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .choose-card {
+        width: calc(100% - 50px);
+        height: 220px;
+        padding: 25px;
+    }
+
+    .choose-card h3 {
+        font-size: 20px;
+        margin: 16px 0;
+    }
+
+    /* newsletter style */
+    .newsletter {
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+
+    .newsletter-form {
+        width: calc(100% - 50px);
+        padding: 25px;
+    }
+
+    .newsletter-form form input {
+        width: 100%;
+    }
+
+    .newsletter-column-2 {
+        width: 100%;
+    }
+
+    .save-up-discount {
+        bottom: 35px;
+        width: 214.023px;
+        height: 79.268px;
+    }
+
+    .save-up-discount p {
+        font-size: 15.854px;
+    }
+
+    .save-up-discount h3 {
+        font-size: 21.138px;
+    }
+
+    /* footer-section style */
+    .footer-section {
+        padding: 50px 0;
+    }
+
+    .footer-section p {
+        margin: 30px;
+    }
+
+    .footer-section hr {
+        width: 100%;
+    }
 }
