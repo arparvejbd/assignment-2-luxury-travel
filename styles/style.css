@@ -438,6 +438,7 @@ footer {
     header {
         padding-bottom: 40px;
     }
+
     .primary-title {
         font-size: 20px;
         line-height: 40px;
@@ -559,18 +560,23 @@ footer {
     .holiday-packages-row {
         margin-bottom: 40px;
     }
+
     .holiday-packages-title {
         font-size: 24px;
     }
+
     .holiday-packages-row p {
         margin: 20px;
     }
+
     .package {
         flex-direction: column;
     }
+
     .pack-card img {
         width: 100%;
     }
+
     /* newsletter style */
     .newsletter {
         flex-direction: column;
