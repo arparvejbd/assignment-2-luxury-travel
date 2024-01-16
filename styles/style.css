@@ -108,7 +108,7 @@ nav {
 }
 
 .header-section {
-    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('/images/lake-view.png');
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('../images/lake-view.png');
     border-radius: 16px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -313,7 +313,7 @@ nav {
     width: 672px;
     height: 422px;
     border-radius: 16px;
-    background-image: url('/images/mountain-water.png');
+    background-image: url('../images/mountain-water.png');
     position: relative;
 }
 
