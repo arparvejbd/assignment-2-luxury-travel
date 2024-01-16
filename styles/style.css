@@ -202,8 +202,22 @@ nav {
     padding-bottom: 20px;
 }
 
-.img-row img {
+.img-row .d-image img {
     width: 100%;
+}
+
+.d-image {
+    position: relative;
+}
+
+.d-image div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 800;
 }
 
 /* why-choose-us style */
@@ -240,6 +254,7 @@ nav {
     border: 1px solid rgba(41, 206, 246, 0.20);
     background: rgba(41, 206, 246, 0.05);
 }
+
 .card-3 {
     width: calc(50% - 12px);
 }
@@ -467,10 +482,12 @@ footer {
         flex-direction: column;
     }
 
-    .img-row img {
+    .img-row .d-image img {
         height: 200px;
     }
-
+    .d-image div {
+        font-size: 20px;
+    }
     /* why-choose-us style */
     .why-choose-us {
         padding-bottom: 30px;
